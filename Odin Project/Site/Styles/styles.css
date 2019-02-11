@@ -1,0 +1,54 @@
+
+.container {
+    height: 100%;
+    Width: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template: repeat (5, 1fr) / repeat(3, 1fr);
+    grid-template-areas: 
+        "a c b"
+        "c l c"
+        "c s c"
+        "c b c"
+        "d c e";
+    }
+
+
+.left-nav {
+    grid-area: a;
+
+}
+
+.right-nav {
+    grid-area: b;
+   
+}
+
+.main {
+    grid-area: c;
+}
+
+.logo {
+    grid-area: l;
+    
+}
+
+.search-bar {
+    grid-area: s;
+    
+}
+
+.buttons {
+    grid-area: b;
+}
+
+
+.sub-left-nav { 
+    grid-area: d;
+    
+}
+
+.sub-right-nav {
+    grid-area: e;
+    
+}
