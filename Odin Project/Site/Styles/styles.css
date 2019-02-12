@@ -12,27 +12,32 @@
         "f f f"
 }
 
-.container header nav ul li img {
+.container header div div img {
     width: 30px;
     height: 30px;
 }
 
 main {
     grid-area: c;
-    justify-content: center;
-    align-content: center;
+    text-align: center
 }
 
 header {
     grid-area: h; 
-    justify-content: space-between;
-    align-content: start;
-    display: inline;
+    display: flex;
+}
+
+.left-nav {
+    justify-content: flex-end;
+
+    
+}
+
+.right-nav {
+    justify-content: flex-start;
 }
 
 footer {
     grid-area: f;
-    justify-content: space-between;
-    align-content: end;
-    display: inline;
+    display: flex;
 }
