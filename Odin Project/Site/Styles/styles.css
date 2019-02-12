@@ -1,43 +1,44 @@
 
-.container {
+.wrapper {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template: repeat (5, 1fr) / repeat(3, 1fr);
     grid-template-areas: 
-        "h h h"
+        "l . r"
         "c c c"
         "c c c"
         "c c c"
-        "f f f"
+        "a . b"
 }
 
-.container header div div img {
+.wrapper div div img {
     width: 30px;
     height: 30px;
 }
 
 main {
     grid-area: c;
-    text-align: center
-}
-
-header {
-    grid-area: h; 
-    display: flex;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 550px;
 }
 
 .left-nav {
-    justify-content: flex-end;
-
-    
+    grid-area: l;
 }
 
 .right-nav {
-    justify-content: flex-start;
+    grid-area: r;
+    margin-left: auto;
+    display: flex;
 }
 
-footer {
-    grid-area: f;
-    display: flex;
+.sub-left {
+    grid-area: a;
+}
+
+.sub-right {
+    grid-area: b;
+    margin-left: auto;
 }
