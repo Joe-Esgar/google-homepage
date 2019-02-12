@@ -1,54 +1,38 @@
 
 .container {
     height: 100%;
-    Width: 100%;
+    width: 100%;
     display: grid;
-    grid-gap: 3px;
     grid-template: repeat (5, 1fr) / repeat(3, 1fr);
     grid-template-areas: 
-        "a c b"
-        "c l c"
-        "c s c"
-        "c b c"
-        "d c e";
-    }
-
-
-.left-nav {
-    grid-area: a;
-
+        "h h h"
+        "c c c"
+        "c c c"
+        "c c c"
+        "f f f"
 }
 
-.right-nav {
-    grid-area: b;
-   
+.container header nav ul li img {
+    width: 30px;
+    height: 30px;
 }
 
-.main {
+main {
     grid-area: c;
+    justify-content: center;
+    align-content: center;
 }
 
-.logo {
-    grid-area: l;
-    
+header {
+    grid-area: h; 
+    justify-content: space-between;
+    align-content: start;
+    display: inline;
 }
 
-.search-bar {
-    grid-area: s;
-    
-}
-
-.buttons {
-    grid-area: b;
-}
-
-
-.sub-left-nav { 
-    grid-area: d;
-    
-}
-
-.sub-right-nav {
-    grid-area: e;
-    
+footer {
+    grid-area: f;
+    justify-content: space-between;
+    align-content: end;
+    display: inline;
 }
